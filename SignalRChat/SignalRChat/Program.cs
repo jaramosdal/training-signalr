@@ -21,6 +21,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapHub<ChatHub>("/chatHub"); // SignalR
+app.MapHub<StronglyTypedChatHub>("/chatHub"); // SignalR
 
 app.Run();
